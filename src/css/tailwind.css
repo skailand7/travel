@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl;
+}
+.card-img {
+  @apply w-full h-3/5 rounded-t-lg bg-cover;
+}
+.card-info {
+  @apply w-full h-2/5 rounded-b-lg;
+}
+.card:nth-child(odd) {
+  @apply bg-secondary dark:bg-gray-800;
+}
+.card:nth-child(odd) p {
+  @apply text-white;
+}
+.card:nth-child(even) {
+  @apply bg-white dark:bg-gray-600;
+}
+.card:nth-child(even) {
+  @apply text-blue-400 dark:text-white;
+}
+.card-title {
+  @apply text-3xl px-8 py-8 pb-2 font-semibold text-white;
+}
